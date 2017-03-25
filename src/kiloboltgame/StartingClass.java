@@ -1,5 +1,5 @@
 package kiloboltgame;
-
+// hello from mac os!
 import java.applet.Applet;
 import java.awt.Color;
 import java.awt.Frame;
