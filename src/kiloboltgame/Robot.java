@@ -122,9 +122,11 @@ public class Robot {
 		}
 		if(centerX > 200 && speedX > 0){
 			// scroll the background to the left to give the illusion the character is moving right
+			// now with multiple layers of backgrounds, we want the farthest one to scroll at slower speed
+			// background will move at 1/5 the character's speed
 			System.out.println("Scroll background here");
-			bg1.setSpeedX(-MOVESPEED);
-			bg2.setSpeedX(-MOVESPEED);
+			bg1.setSpeedX(-MOVESPEED/5);
+			bg2.setSpeedX(-MOVESPEED/5);
 		}
 		
 		// updates Y position

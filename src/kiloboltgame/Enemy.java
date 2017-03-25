@@ -8,7 +8,7 @@ public class Enemy {
 	public void update() {
 		// enemy should move along with the scrolling background
 		centerX += speedX;
-		speedX = bg.getSpeedX();
+		speedX = bg.getSpeedX()*5;
 	}
 
 	public void die() {
